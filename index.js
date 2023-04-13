@@ -8,7 +8,7 @@ function binarySearch (sortedArr, key){
     return binarySearchRun(sortedArr, key, start, end);
 }
 const binarySearchRun = (sortedArr, key, start, end) =>{
-    let middle = Math.floor((start + end) / 2);
+    let middle = Math.round((start + end) / 2);
     if (end < start){
          return -1;
     }else if (key === sortedArr[middle]){
